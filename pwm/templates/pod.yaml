@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bitwarden
+spec:
+  containers:
+  - name: bitwarden
+    image: bitwardenrs/server
