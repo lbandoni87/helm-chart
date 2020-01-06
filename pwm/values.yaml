@@ -30,6 +30,11 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+containerPorts:
+  http:
+    port: 80
+    protocol: TCP
+    
 service:
   enabled: true
   ports:
