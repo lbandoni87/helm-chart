@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bitwarden
+spec:
+  selector:
+    matchLabels:
+      run: bitwarden
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: bitwarden
+    spec:
+      containers:
+      - name: bitwarden
+        image: 609244884738.dkr.ecr.eu-west-1.amazonaws.com/bitwarden
+        ports:
+        - containerPort: 80
