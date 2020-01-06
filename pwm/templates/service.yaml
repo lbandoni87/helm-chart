@@ -6,8 +6,7 @@ spec:
   selector:
     app: bitwarden
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30080
+    - port: 443
+      protocol: TCP
+      name: https
   type: NodePort
