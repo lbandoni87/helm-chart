@@ -1,12 +1,12 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
-  name: bitwarden-service
+  name: bitwarden
+  labels:
+    run: bitwarden
 spec:
-  selector:
-    app: bitwarden
   ports:
-    - port: 443
+    - port: 80
       protocol: TCP
-      name: https
-  type: NodePort
+  selector:
+    run: bitwarden
