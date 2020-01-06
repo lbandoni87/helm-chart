@@ -36,12 +36,7 @@ containerPorts:
     protocol: TCP
     
 service:
-  enabled: true
-  ports:
-    app:
-      port: 80
-      targetPort: http
-      protocol: TCP
+  type: NodePort
 
 ingress:
   enabled: false
