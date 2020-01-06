@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bitwarden
+  name: bitwarden-deployment
+  labels:
+    app: bitwarden
 spec:
   selector:
     matchLabels:
