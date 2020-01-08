@@ -4,10 +4,10 @@ metadata:
   name: bitwarden-service
 spec:
   selector:
-    app: bitwarden
+    app: {{ template "bitwarden.name" . }}
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30080
-  type: NodePort
+      port: {{ .Values.app.service.externalPort }}
+      targetPort: {{ .Values.app.service.internalPort }}
+      nodePort: {{ .Values.app.service.nodePort }}
+  type: {{ .Values.app.service.type }}
