@@ -3,7 +3,7 @@ entries:
   bitwarden:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-09T11:43:36.755121165Z"
+    created: "2020-01-10T10:17:45.746534754Z"
     description: A Helm chart for Kubernetes
     digest: ae5c991851c0f2de9f51707628135686f6478ff4074a69f022d2219ec281442b
     name: bitwarden
@@ -13,11 +13,11 @@ entries:
   busybox:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-09T11:43:36.755240392Z"
+    created: "2020-01-10T10:17:45.746652384Z"
     description: A Helm chart for Kubernetes
-    digest: 76baa9cc1ff1523d39571ebbd4adf7642d12b4cd51ff13188638c76db321b68b
+    digest: 3bdb715b7c6f57886c158d8145439824d90662a4e6eb4f9b1fb8c974e4b92d0f
     name: busybox
     urls:
     - busybox-0.1.0.tgz
     version: 0.1.0
-generated: "2020-01-09T11:43:36.754853025Z"
+generated: "2020-01-10T10:17:45.746128708Z"
