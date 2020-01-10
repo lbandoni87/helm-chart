@@ -12,8 +12,8 @@ app:
   service:
     type: NodePort
     name: app
-    externalPort: 80
-    internalPort: 80
+    externalPort: 81
+    internalPort: 81
     nodePort : 30080
     
 serviceAccount:
